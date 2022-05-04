@@ -1,13 +1,13 @@
 <nav class="">
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link" aria-current="page" >Welcome</a>
+            <a class="nav-link" [routerLink]="['/welcome']" routerLinkActive="active">Welcome</a>
         </li>
         <li class="nav-item">            
-            <a class="nav-link">Products</a>
+            <a class="nav-link" [routerLink]="['/products']" routerLinkActive="active">Products</a>
         </li>
         <li class="nav-item">            
-            <a class="nav-link">Cart</a>
+            <a class="nav-link" [routerLink]="['/cart']" routerLinkActive="active">Cart</a>
         </li>
     </ul>
 </nav>
