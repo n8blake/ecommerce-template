@@ -1,0 +1,8 @@
+<div class="mb-5">
+    <div class="search-wrapper">
+        <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="searchProducts(searchTerm)" placeholder="search" />
+    </div>
+<div class="d-flex justify-content-center">
+    <app-products-list [products]="visibleProducts"></app-products-list>
+</div>
+</div>

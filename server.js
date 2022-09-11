@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(cors());
 app.use(compression());
 // Serve up static assets (usually on heroku)
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(__dirname + '/client/dist/client'));
   app.get('/*', function(request, response) {
